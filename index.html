@@ -1,0 +1,74 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+
+  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+  <script src="https://d3js.org/d3.v4.min.js"></script>
+  <script src="http://zalando.github.io/tech-radar/release/radar-0.6.js"></script>
+
+  <svg id="radar"></svg>
+
+  <script>
+  radar_visualization({
+  svg_id: "radar",
+  width: 1450,
+  height: 1000,
+  colors: {
+    background: "#fff",
+    grid: "#bbb",
+    inactive: "#ddd"
+  },
+  title: "My Radar",
+  quadrants: [
+    { name: "Techniques" },
+    { name: "Tools" },
+    { name: "Platforms" },
+    { name: "Languages & Frameworks" }
+  ],
+  rings: [
+    { name: "Adopt",  color: "#93c47d" },
+    { name: "Trial", color: "#b7e1cd" },
+    { name: "Assess",  color: "#fce8b2" },
+    { name: "Hold",  color: "#f4c7c3" }
+  ],
+  print_layout: true,
+  entries: [
+   {
+      label: "ArgoCD",
+      quadrant: 1,          // 0,1,2,3 (counting clockwise, starting from bottom right)
+      ring: 2,              // 0,1,2,3 (starting from inside)
+      moved: -1             // -1 = moved out (triangle pointing down)
+                            //  0 = not moved (circle)
+                            //  1 = moved in  (triangle pointing up)
+   },
+    // ...
+  ]
+});
+  </script>
+
+</body>
+
+</html>
