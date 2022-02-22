@@ -24,5 +24,5 @@ Thoughtworks sin beskrivelse av kvadrantane og ringane:
 
 Thoughtworks sin radar for eksempel: https://www.thoughtworks.com/radar
 
-Inspirert av: https://opensource.zalando.com/tech-radar/
+Inspirert av: https://opensource.zalando.com/tech-radar/ (https://zalando.github.io/tech-radar/release/radar-0.6.js)
 
