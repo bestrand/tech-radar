@@ -1,5 +1,7 @@
 # tech-radar
 
+https://bestrand.github.io/tech-radar/
+
 Thoughtworks sin beskrivelse av kvadrantane og ringane:
 
 **Kvadrantar:**
